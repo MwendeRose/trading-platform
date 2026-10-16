@@ -4,4 +4,4 @@ export const C = {
 };
 export const BRAND = '[YOUR BRAND]';
 export const INSTRUMENTS = ['EUR/USD', 'GBP/USD', 'Gold', 'USD/KES'];
-export const PRICE = '[PRICE]'; // replace with live data from your licensed broker or liquidity provider
+export const PRICE = '[PRICE]';

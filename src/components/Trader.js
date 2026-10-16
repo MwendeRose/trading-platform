@@ -2,9 +2,8 @@ import React, { useState } from 'react';
 import { View, Text } from 'react-native';
 import { C, INSTRUMENTS, PRICE } from '../theme';
 import { Btn, Chip, Field } from './ui';
-import Chart from './chart';
+import Chart from './Chart';
 
-// Shared by the website hero and the app Trade screen.
 export default function Trader({ withVolume }) {
   const [sym, setSym] = useState('EUR/USD');
   const [tf, setTf] = useState('1H');
@@ -13,7 +12,6 @@ export default function Trader({ withVolume }) {
   const order = (side) => {
     const v = parseFloat(lots || '0.01');
     if (!(v > 0)) return setMsg('Enter a volume above 0');
-    // Demo only: send this to your broker or order-routing backend.
     setMsg(`Demo order: ${side} ${v} lot ${sym}`);
   };
   return (

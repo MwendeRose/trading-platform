@@ -18,8 +18,6 @@ export default function DepositScreen({ deposit }) {
     if (busy) return;
     setBusy(true);
     setStatus(`Check your phone and enter your M-Pesa PIN to approve KES ${v.toLocaleString()}.`);
-    // Real version: POST to your server, which calls the Daraja STK Push API.
-    // Only credit the balance after Safaricom's confirmation callback reaches your server.
     setTimeout(() => {
       deposit(v);
       setStatus('Deposit received.');

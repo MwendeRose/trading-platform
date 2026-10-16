@@ -18,7 +18,6 @@ export default function App() {
     setLog((l) => [{ id: String(Date.now()), text: `Deposit +KES ${v.toLocaleString()}` }, ...l]);
   };
 
-  // Wide browser window shows the website; phones and narrow windows show the app.
   if (Platform.OS === 'web' && width >= 900) return <WebsiteScreen />;
 
   return (

@@ -2,7 +2,6 @@ import React from 'react';
 import Svg, { Polyline, Polygon, Line } from 'react-native-svg';
 import { C } from '../theme';
 
-// Illustrative line only. Replace `points` with candles or ticks from your price feed.
 const points = [140, 120, 130, 95, 105, 70, 85, 50, 62, 35, 45];
 
 export default function Chart({ height = 180 }) {
