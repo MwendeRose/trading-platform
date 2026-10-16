@@ -33,7 +33,7 @@ export const Card = ({ children, style }) => <View style={[styles.card, style]}>
 
 const styles = StyleSheet.create({
   btn: { minHeight: 48, paddingHorizontal: 22, borderRadius: 8, alignItems: 'center', justifyContent: 'center' },
-  btnText: { fontWeight: '800', fontSize: 16 },
+  btnText: { fontWeight: '800', fontSize: 16, textAlign: 'center' },
   primary: { box: { backgroundColor: C.orange }, text: { color: C.onOrange } },
   outline: { box: { borderWidth: 2, borderColor: C.orange }, text: { color: C.orange } },
   light: { box: { borderWidth: 2, borderColor: C.text }, text: { color: C.text } },

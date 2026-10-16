@@ -1,13 +1,11 @@
 import React from 'react';
-import { ScrollView, Text } from 'react-native';
-import { C } from '../theme';
-import Trader from '../components/Trader';
+import { ScrollView } from 'react-native';
+import Terminal from '../components/Terminal';
 
-export default function TradeScreen() {
+export default function TradeScreen({ platform }) {
   return (
     <ScrollView contentContainerStyle={{ padding: 20 }}>
-      <Text style={{ color: C.text, fontSize: 22, fontWeight: '800', marginBottom: 14 }}>Trade</Text>
-      <Trader withVolume />
+      <Terminal platform={platform} />
     </ScrollView>
   );
 }
